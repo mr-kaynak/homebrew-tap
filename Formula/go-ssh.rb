@@ -11,7 +11,7 @@ class GoSsh < Formula
   on_macos do
     on_intel do
       url "https://github.com/mr-kaynak/go-ssh/releases/download/v0.1.3/go-ssh_0.1.3_darwin_amd64.tar.gz"
-      sha256 "dead8641a9fc6e5b4b2a41eb285c83c605f5b72081ff84cb48d75a25dea99bf5"
+      sha256 "7c4f10ec109e7395e613f7d86af772f300396f9606c98ad5543683842e98e007"
 
       def install
         bin.install "go-ssh"
@@ -19,7 +19,7 @@ class GoSsh < Formula
     end
     on_arm do
       url "https://github.com/mr-kaynak/go-ssh/releases/download/v0.1.3/go-ssh_0.1.3_darwin_arm64.tar.gz"
-      sha256 "3327555c140b0502224b14125463d6f8530597d3a74b395a15f475045cdacd69"
+      sha256 "c2641e72fd095d2aebaa0f6ad5c5e05e7506cb1b0d53522475b415541231e2ec"
 
       def install
         bin.install "go-ssh"
@@ -31,7 +31,7 @@ class GoSsh < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/mr-kaynak/go-ssh/releases/download/v0.1.3/go-ssh_0.1.3_linux_amd64.tar.gz"
-        sha256 "ddce53f6c8d87da870dca44e04109cb5b4b5728a63bf5129d49b9c95c8d12192"
+        sha256 "38850b2daa1e75f260aac9f4bd9e9363ee7df1e9905720b931977dab5de05e88"
 
         def install
           bin.install "go-ssh"
@@ -41,7 +41,7 @@ class GoSsh < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/mr-kaynak/go-ssh/releases/download/v0.1.3/go-ssh_0.1.3_linux_arm64.tar.gz"
-        sha256 "99ea1771a67e55d2aeb95dc936eec7dbe9d62cc1b87e011b81c75500d56ad50e"
+        sha256 "85d2dacc0233e7db4b67bfdbd92345f421f5e97d4dc926e06962b9e799c8f011"
 
         def install
           bin.install "go-ssh"
