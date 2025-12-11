@@ -5,21 +5,21 @@
 class GoSsh < Formula
   desc "Minimalist SSH key management tool with interactive TUI"
   homepage "https://github.com/mr-kaynak/go-ssh"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/mr-kaynak/go-ssh/releases/download/v0.1.0/go-ssh_0.1.0_darwin_amd64.tar.gz"
-      sha256 "34b6723660c75419980d95b7c70ce7a9c3c075a807eb9541ed03da8c3075e945"
+      url "https://github.com/mr-kaynak/go-ssh/releases/download/v0.1.1/go-ssh_0.1.1_darwin_amd64.tar.gz"
+      sha256 "55b9564f59e3980c872a76f3144da43d4cafd7401b3aaee2ae5ded989c54ba3b"
 
       def install
         bin.install "go-ssh"
       end
     end
     on_arm do
-      url "https://github.com/mr-kaynak/go-ssh/releases/download/v0.1.0/go-ssh_0.1.0_darwin_arm64.tar.gz"
-      sha256 "c180b8d9e72f7cc7fd1f7bb70ea6f344e7b64e3f7ff60295786952a7178b4746"
+      url "https://github.com/mr-kaynak/go-ssh/releases/download/v0.1.1/go-ssh_0.1.1_darwin_arm64.tar.gz"
+      sha256 "0be802a370558c6e748f36db5fe35efafd99b3fe7aa1624f8669db67a161538d"
 
       def install
         bin.install "go-ssh"
@@ -30,8 +30,8 @@ class GoSsh < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mr-kaynak/go-ssh/releases/download/v0.1.0/go-ssh_0.1.0_linux_amd64.tar.gz"
-        sha256 "628e69adbb38a85364d48cae43df818a9e08ac3540b9c1e768e1226568c020bb"
+        url "https://github.com/mr-kaynak/go-ssh/releases/download/v0.1.1/go-ssh_0.1.1_linux_amd64.tar.gz"
+        sha256 "43616ebd66997ebc3a4c53072a1db10b88ed8e353dbf187e65b655de818fdfbb"
 
         def install
           bin.install "go-ssh"
@@ -40,8 +40,8 @@ class GoSsh < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mr-kaynak/go-ssh/releases/download/v0.1.0/go-ssh_0.1.0_linux_arm64.tar.gz"
-        sha256 "eb2c28525c34a3c2daf57bbae8aa597035227191d8f6dad6a97c7b284212be45"
+        url "https://github.com/mr-kaynak/go-ssh/releases/download/v0.1.1/go-ssh_0.1.1_linux_arm64.tar.gz"
+        sha256 "c37576c6cde867c3cbbe22273348f02d3c693264e0faa0b67259c41b0ef2bfaf"
 
         def install
           bin.install "go-ssh"
